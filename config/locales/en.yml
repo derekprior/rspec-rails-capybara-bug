@@ -1,0 +1,154 @@
+en:
+
+  date:
+    day_names:
+        - Sunday
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+
+  activerecord:
+    attributes:
+      holiday:
+        name: "Holiday Name"
+        occurs_on: "Holiday Date"
+      holiday_schedule:
+        holidays:       "Holidays"
+        holidays_count: "Holidays"
+        name:           "Name"
+      location:
+        allow_shifts?:         "Allow Shifts"
+        holiday_schedule_id:   "Holiday Schedule"
+        holiday_schedule_name: "Holiday Schedule"
+        name:                  "Name"
+      responsibility:
+        active?:         "Active"
+        qualifications:  "Qualified Users"
+        rank_users?:     "Ranks Users"
+        icon:            "Icon"
+      shift:
+        active?:         "Active"
+        display_time:    "Time"
+      user:
+        administrator:  "Administrator"
+        administrator?: "Administrator"
+        login:          "Login"
+        supervisor?:    "Supervisor"
+        supervisor:     "Supervisor"
+    errors:
+      models:
+        shift:
+          duplicate_guideline: "Duplicate responsibility specified in staffing guidelines"
+          duplicate_shift_member: "Duplicate user specified in shift memberships"
+          unchangeable:  "cannot change if a shift has already been scheduled"
+    models:
+      holiday_schedule: "Holiday Schedule"
+
+  helpers:
+    boolean:
+      "yes": "Yes"
+      "no":  "No"
+
+  flash:
+    actions:
+      create:
+        success: '%{resource_name} was successfully created.'
+      update:
+        success: '%{resource_name} was successfully updated.'
+      destroy:
+        success: '%{resource_name} was successfully destroyed.'
+        error:   '%{resource_name} could not be destroyed.'
+
+  titles:
+    new:  "New %{model}"
+    edit: "Edit %{model}"
+
+  actions:
+    title:   "Actions"
+    new:     "New %{model}"
+    add:     "Add %{model}"
+    edit:    "Edit"
+    delete:  "Delete"
+    confirm: "Are you sure?"
+    go:      "Go"
+    cancel:  "Cancel"
+    submit:  "Submit"
+
+  pager:
+    previous_month: "Previous Month"
+    next_month: "Next Month"
+    current_month: "Current Month"
+    today: "Today"
+    back: "<"
+    forward: ">"
+    next_week: "Next Week"
+    previous_week: "Previous Week"
+    current_week: "Current Week"
+
+  schedule:
+    weekly:
+      title: "Weekly Shift Schedule"
+      location_prompt: "All Locations"
+      assignments:
+        show: "Show Assignments"
+        hide: "Hide Assignments"
+      edit_week: "Edit Week"
+      edit_month: "Edit Month"
+      edit_assignments: "Edit Assignments"
+    now:
+      title: "On Schedule Now"
+    personal:
+      title: "Personal Schedule"
+    edit:
+      button:
+        unschedule: "Unschedule"
+        schedule: "Schedule"
+        partial: "Partial"
+        out: "Off"
+        publish: "Save & Publish"
+        draft: "Save Draft"
+        weekly: "Go To Weekly View"
+        monthly: "Go To Monthly View"
+      modals:
+        off_shift:
+          header: "Off Shift Details"
+          note_label: "Note:"
+          note_value: "Off"
+        partial_shift:
+          header: "Partial Shift Details"
+          start_label: "Start Time Offset:"
+          end_label: "End Time Offset:"
+          option_label: "Hours"
+
+  shift_schedules:
+    index:
+      title: "Shift Schedules"
+      buttons:
+        edit_week: "Edit Week"
+        edit_month: "Edit Month"
+
+  assignments:
+    index:
+      title: "Assignments"
+      edit_button: "Edit Assignments"
+
+  navigation:
+    primary:
+      schedule: "Schedule"
+      admin: "Admin"
+      help: "Help"
+    schedule:
+      personal: "Personal Schedule"
+      weekly: "Weekly Schedule"
+      now: "Scheduled Now"
+      edit: "Edit Schedule"
+      assignments: "Edit Assignments"
+    admin:
+      shifts: "Shifts"
+      responsibilities: "Responsibilities"
+      locations: "Locations"
+      holiday_schedules: "Holidays"
+      users: "Users"

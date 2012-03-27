@@ -1,0 +1,66 @@
+en:
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+    error_notification:
+      default_message: "There were some errors with your submission:"
+    labels:
+      location:
+        name: "Name:"
+        holiday_schedule: "Holiday Schedule:"
+        allow_shifts: "Allow Shifts:"
+      holiday_schedule:
+        name: "Name:"
+        holidays: "Holidays:"
+      responsibility:
+        name: "Name:"
+        icon: "Icon:"
+        active: "Active:"
+        rank_users: "Rank Users:"
+        qualifications: "Qualified Users:"
+      shift:
+        location: "Location:"
+        name: "Name:"
+        start_time: "Start Time:"
+        duration: "Duration:"
+        active: "Active:"
+        staffing_guidelines: "Staffing Guidelines:"
+        shift_memberships: "Shift Members:"
+      users:
+        login: "Login:"
+        roles: "Roles:"
+    placeholders:
+      holiday_schedule:
+        holidays:
+          name: "Holiday Name"
+          occurs_on: "Date"
+      responsibility:
+        qualifications:
+          user_login: 'Login'
+          position: 'Rank'
+      shift:
+        start_time: "UTC"
+        duration: "Hours"
+        staffing_guideleines:
+          weekday: "Weekday"
+          weekend: "Weekend"
+        shift_memberships:
+          user_login: "Login"
+    hints:
+      shift:
+        staffing: "Weekday/Weekend"
+    # Labels and hints examples
+    # labels:
+    #   password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail para efetuar o sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   username: 'User name to sign in.'
+    #   password: 'No special characters, please.'
+

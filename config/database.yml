@@ -1,0 +1,15 @@
+common: &common
+  adapter: postgresql
+  encoding: unicode
+  min_messages: warning
+
+development:
+  <<: *common
+  database: test_development
+  username: test_app
+
+test:
+  <<: *common
+  database: test_test
+  username: test_app
+
