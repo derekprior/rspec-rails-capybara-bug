@@ -1,0 +1,15 @@
+A minimal reproduction of:
+https://github.com/rspec/rspec-rails/issues/360
+
+To Repro:
+1. Clone
+2. bundle install
+3. bundle exec rspec
+
+Result:
+2 Specs, 1 Pass, 1 Fail (`visit` undefined)
+
+Cause:
+It seems the capybara-screenshot gem in the gemfile causes
+the issue. Removing this gem from the gemfile causes both specs
+to pass.
